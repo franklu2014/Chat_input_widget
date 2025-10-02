@@ -47,6 +47,14 @@ If you want to modify or rebuild the React component, you can find the source co
    ```bash
    npm start
    ```
+### Step 3: Publish the Package  
+With reference to: https://github.com/linancn/Chat_input_widget/
+```bash
+pip install twine setuptools
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
 
 ### Usage
 

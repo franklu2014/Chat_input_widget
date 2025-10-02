@@ -14,7 +14,7 @@ const ChatInputWidget: React.FC = () => {
   const { startRecording, stopRecording, mediaBlobUrl } = useReactMediaRecorder({ audio: true });
 
   useEffect(() => {
-    Streamlit.setFrameHeight(650);  // Set component height
+    Streamlit.setFrameHeight(80);  // Set component height
   }, []);
 
   const sendDataToStreamlit = (data: any) => {
@@ -87,7 +87,7 @@ const ChatInputWidget: React.FC = () => {
       <textarea
         ref={textAreaRef}
         className="chat-input"
-        placeholder="Type a message..."
+        placeholder="Ask any question..."
         value={inputText}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}

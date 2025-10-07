@@ -87,7 +87,7 @@ const ChatInputWidget: React.FC = () => {
       <textarea
         ref={textAreaRef}
         className="chat-input"
-        placeholder="Ask any question..."
+        placeholder="Type question here or use audio input to the right..."
         value={inputText}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}

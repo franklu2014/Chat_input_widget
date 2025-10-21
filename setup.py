@@ -6,7 +6,7 @@ frontend_path = os.path.join('streamlit_chat_widget', 'frontend', 'build')
 
 setup(
     name="streamlit_chat_widget_franklu",
-    version="0.5.0",
+    version="0.6.0",
     description="A custom chat input widget for Streamlit based on Mohammed Bahageel's Chat Input Widget",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

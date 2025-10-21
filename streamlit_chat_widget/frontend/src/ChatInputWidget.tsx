@@ -11,7 +11,12 @@ const ChatInputWidget: React.FC = () => {
   const [isRecording, setIsRecording] = useState<boolean>(false);
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
-  const { startRecording, stopRecording, mediaBlobUrl } = useReactMediaRecorder({ audio: true });
+  const { startRecording, stopRecording, mediaBlobUrl } = useReactMediaRecorder({ 
+    audio: true, 
+    mediaRecorderOptions: { 
+      mimeType: "audio/wav"
+    } 
+  });
 
   useEffect(() => {
     Streamlit.setFrameHeight(80);  // Set component height
